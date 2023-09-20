@@ -36,7 +36,7 @@ jobs:
 
       - name: Black Duck PR Scan
         if: ${{ github.event_name == 'pull_request' }}
-        uses: synopsys-sig/synopsys-action@vSIGINT-1031-fixpr
+        uses: synopsys-sig/synopsys-action@SIGINT-1031-fixpr
         ### Use below configuration to set specific detect environment variables
         env:
           DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
