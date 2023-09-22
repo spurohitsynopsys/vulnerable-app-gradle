@@ -28,8 +28,8 @@ jobs:
           ### Uncomment below configuration to enable automatic fix pull request creation if vulnerabilities are reported
           blackduck_fixpr_enabled: true
           # blackduck_fixpr_maxCount: 2
-          # blackduck_fixpr_useUpgradeGuidance: 'new'
-          blackduck_fixpr_filter_severities: 'critical'
+          blackduck_fixpr_useUpgradeGuidance: 'new'
+          # blackduck_fixpr_filter_severities: 'critical'
           github_token: ${{ secrets.GITHUB_TOKEN }} # Mandatory when blackduck_automation_fixpr is set to 'true'
           ### Uncomment below configuration if Synopsys Bridge diagnostic files needs to be uploaded
           # include_diagnostics: true  
